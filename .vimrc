@@ -45,9 +45,11 @@ au Filetype go setlocal softtabstop=2
 au Filetype go setlocal shiftwidth=2
 au Filetype go setlocal noexpandtab
 
-" Make markdown easier to work with
-autocmd FileType markdown :set tw=79
-autocmd FileType markdown :set spell
+au FileType markdown setlocal tabstop=2
+au FileType markdown setlocal softtabstop=2
+au FileType markdown setlocal shiftwidth=2
+au FileType markdown setlocal textwidth=79
+au FileType markdown setlocal expandtab
 
 au FileType html setlocal tabstop=2
 au FileType html setlocal softtabstop=2
@@ -64,3 +66,27 @@ au BufNewFile,BufRead *.yml setlocal textwidth=79
 au BufNewFile,BufRead *.yml setlocal expandtab
 au BufNewFile,BufRead *.yml setlocal autoindent
 au BufNewFile,BufRead *.yml setlocal fileformat=unix
+
+au FileType sql setlocal tabstop=2
+au FileType sql setlocal softtabstop=2
+au FileType sql setlocal shiftwidth=2
+au FileType sql setlocal textwidth=79
+au FileType sql setlocal expandtab
+au FileType sql setlocal autoindent
+au FileType sql setlocal fileformat=unix
+
+au BufNewFile,BufRead *.js setlocal tabstop=2
+au BufNewFile,BufRead *.js setlocal softtabstop=2
+au BufNewFile,BufRead *.js setlocal shiftwidth=2
+au BufNewFile,BufRead *.js setlocal textwidth=79
+au BufNewFile,BufRead *.js setlocal expandtab
+au BufNewFile,BufRead *.js setlocal autoindent
+au BufNewFile,BufRead *.js setlocal fileformat=unix
+
+au BufNewFile,BufRead *.css setlocal tabstop=2
+au BufNewFile,BufRead *.css setlocal softtabstop=2
+au BufNewFile,BufRead *.css setlocal shiftwidth=2
+au BufNewFile,BufRead *.css setlocal textwidth=79
+au BufNewFile,BufRead *.css setlocal expandtab
+au BufNewFile,BufRead *.css setlocal autoindent
+au BufNewFile,BufRead *.css setlocal fileformat=unix
