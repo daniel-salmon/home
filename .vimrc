@@ -22,16 +22,16 @@ set ruler
 " Full filepath at bottom
 set statusline+=%F
 
-" Python PEP-8 defaults
+" Python defaults
 au FileType python setlocal tabstop=4
 au FileType python setlocal softtabstop=4
 au FileType python setlocal shiftwidth=4
-au FileType python setlocal textwidth=79
+au FileType python setlocal textwidth=99
 au FileType python setlocal expandtab
 au FileType python setlocal autoindent
 au FileType python setlocal fileformat=unix
 
-" R should almost use PEP-8 too
+" R defaults
 au BufNewFile,BufRead *.R setlocal tabstop=2
 au BufNewFile,BufRead *.R setlocal softtabstop=2
 au BufNewFile,BufRead *.R setlocal shiftwidth=2
