@@ -18,15 +18,20 @@ set shiftwidth=8
 set noexpandtab
 
 set ruler
+set number
 
-" Full filepath at bottom
+set showcmd
+set hlsearch
+
+" Status line and Full filepath at bottom
+set laststatus=2
 set statusline+=%F
 
 " Python PEP-8 defaults
 au FileType python setlocal tabstop=4
 au FileType python setlocal softtabstop=4
 au FileType python setlocal shiftwidth=4
-au FileType python setlocal textwidth=79
+au FileType python setlocal textwidth=99
 au FileType python setlocal expandtab
 au FileType python setlocal autoindent
 au FileType python setlocal fileformat=unix
@@ -39,6 +44,13 @@ au BufNewFile,BufRead *.R setlocal textwidth=79
 au BufNewFile,BufRead *.R setlocal expandtab
 au BufNewFile,BufRead *.R setlocal autoindent
 au BufNewFile,BufRead *.R setlocal fileformat=unix
+
+au Filetype c setlocal tabstop=4
+au Filetype c setlocal softtabstop=4
+au Filetype c setlocal shiftwidth=4
+au Filetype c setlocal textwidth=79
+au Filetype c setlocal expandtab
+au Filetype c setlocal autoindent
 
 au Filetype go setlocal tabstop=2
 au Filetype go setlocal softtabstop=2
