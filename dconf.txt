@@ -97,6 +97,12 @@ idle-delay=uint32 0
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
+[org/gnome/desktop/wm/keybindings]
+switch-windows=['<Alt>Tab']
+switch-applications=@as []
+switch-applications-backward=@as []
+switch-windows-backward=['<Shift><Alt>Tab']
+
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 
