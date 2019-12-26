@@ -47,7 +47,7 @@ sudo add-apt-repository \
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 # Allow non-root users to run Docker without sudo
-sudo groupadd docker
+# sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 

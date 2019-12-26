@@ -24,17 +24,17 @@ mkdir -p ~/bin
 
 # Clone my repo containing all configurations
 cd ~/src/github.com/daniel-salmon
-git clone https://github.com/daniel-salmon/dotfiles.git
+git clone https://github.com/daniel-salmon/home.git
 cd dotfiles
 
 # vimrc
 cp .vimrc ~/.vimrc
 
 # Copy personal bin to ~/bin
-cp -r bin ~/bin
+cp bin/* ~/bin
 
 # Load my custom dconf profile
-dconf load dconf.txt
+cat dconf.txt | dconf load /
 
 # bashrc
 cat .bashrc | tee -a ~/.bashrc

@@ -25,7 +25,7 @@ Similarly, we fetch the configuration script and execute it as well:
 
 ```sh
 $ cd ~/Downloads
-$ https://raw.githubusercontent.com/daniel-salmon/home/master/config.sh
+$ wget https://raw.githubusercontent.com/daniel-salmon/home/master/config.sh
 $ chmod +x config.sh
 $ ./config.sh
 ```
