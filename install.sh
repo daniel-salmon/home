@@ -78,3 +78,9 @@ sudo apt-get --yes install postgresql-11
 
 # Version-lock the Postgres installation
 sudo apt-mark hold postgresql-11
+
+# Install Opera web browser
+# Often useful for streaming music on non-primary web browser (Firefox)
+wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
+sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free"
+sudo apt-get --yes install opera-stable
