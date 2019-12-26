@@ -1,24 +1,21 @@
 # Vim
-sudo apt install vim
+sudo apt-get --yes install vim
 
 # Git
-sudo apt install git
+sudo apt-get --yes install git
 
 # libsecret
 # Useful for managing credentials, e.g. for git
-sudo apt-get install libsecret-1-0 libsecret-1-dev
+sudo apt-get --yes install libsecret-1-0 libsecret-1-dev
 cd /usr/share/doc/git/contrib/credential/libsecret
 sudo make
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 
 # curl
-sudo apt install curl
-
-# Gnome Tweaks
-sudo apt install gnome-tweaks
+sudo apt-get --yes install curl
 
 # dconf
-sudo apt-get install dconf-tools
+sudo apt-get --yes install dconf-tools
 
 # Go
 # To remove an installation: $ sudo rm -rf /usr/local/go
@@ -32,7 +29,7 @@ rm -rf ~/Downloads/go1.13.5.linux-amd64.tar.gz
 # Docker
 # Taken directly from docker docs: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 # These steps also include the post-installation steps for Linux: https://docs.docker.com/install/linux/linux-postinstall/
-sudo apt-get install \
+sudo apt-get --yes install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -65,7 +62,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # LaTEX
 # This full install will take a bit of time,
 # but it's worth it to avoid missing-package nightmares down the road
-sudo apt install texlive-full
+sudo apt-get --yes install texlive-full
 
 # PostgreSQL
 # Taken from the Postgres docs: https://www.postgresql.org/download/linux/ubuntu/
@@ -76,8 +73,8 @@ sudo touch /etc/apt/sources.list.d/pgdg.list
 echo "deb http://apt.postgresql.org/pub/repos/apt/ $codename-pgdg main" \
 	| sudo tee /etc/apt/sources.list.d/pgdg.list
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install postgresql-11
+sudo apt-get --yes update
+sudo apt-get --yes install postgresql-11
 
 # Version-lock the Postgres installation
 sudo apt-mark hold postgresql-11
