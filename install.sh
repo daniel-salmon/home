@@ -84,3 +84,6 @@ sudo apt-mark hold postgresql-11
 wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
 sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free"
 sudo apt-get --yes install opera-stable
+
+# R + OpenBLAS
+sudo apt-get --yes install libopenblas-base r-base
