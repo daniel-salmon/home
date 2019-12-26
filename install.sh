@@ -1,5 +1,5 @@
 # Vim
-sudo apt-get --yes install vim
+sudo apt-get --yes install vim-gnome
 
 # Git
 sudo apt-get --yes install git
