@@ -140,6 +140,9 @@ theme-variant='dark'
 [org/gnome/software]
 check-timestamp=int64 1577299276
 
+[org/gnome/mutter]
+workspaces-only-on-primary=false
+
 [org/gtk/settings/file-chooser]
 sort-column='name'
 sidebar-width=196
