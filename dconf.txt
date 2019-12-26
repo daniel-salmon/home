@@ -9,7 +9,7 @@ sleep-inactive-ac-type='nothing'
 night-light-schedule-to=24.0
 night-light-schedule-from=0.0
 night-light-enabled=true
-night-light-temperature=uint32 4750
+night-light-temperature=uint32 4500
 
 [org/gnome/settings-daemon/plugins/media-keys]
 www='<Primary><Alt>w'
