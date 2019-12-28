@@ -87,3 +87,11 @@ sudo apt-get --yes install opera-stable
 
 # R + OpenBLAS
 sudo apt-get --yes install libopenblas-base r-base
+
+# csvkit
+# Useful for performing data jiu jitsu
+sudo apt-get --yes install csvkit
+
+# jq
+# Useful for working with JSON
+sudo apt-get --yes install jq
