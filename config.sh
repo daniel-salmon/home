@@ -57,3 +57,8 @@ curl https://gist.githubusercontent.com/daniel-salmon/73ce6defa395031dcff87d520a
 # Elasticsearch + Kibana docker-compose.yml
 mkdir -p ~/docker/elasticsearch
 curl https://gist.githubusercontent.com/daniel-salmon/6703e160676e4b904230cf9ebfc05826/raw/6ecf18710483afb4b75ec438578022086b5936f7/docker-compose.yml > ~/docker/elasticsearch/docker-compose.yml
+
+# Postgres password file
+# See https://www.postgresql.org/docs/current/libpq-pgpass.html
+touch ~/.pgpass
+chmod 0600 ~/.pgpass

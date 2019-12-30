@@ -75,6 +75,7 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ $codename-pgdg main" \
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get --yes update
 sudo apt-get --yes install postgresql-11
+sudo apt-get --yes install pgadmin4
 
 # Version-lock the Postgres installation
 sudo apt-mark hold postgresql-11
