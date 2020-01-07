@@ -96,3 +96,8 @@ sudo apt-get --yes install csvkit
 # jq
 # Useful for working with JSON
 sudo apt-get --yes install jq
+
+# Tange2011a
+# GNU Parallel
+# O. Tange
+sudo apt-get --yes install parallel
