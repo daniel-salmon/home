@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# pg-diff calculates the difference between two tables in a postgres database
+# It is only as smart as
+# 1. The diff utility
+# 2. The query you give it
+
+# That is, you need to give it a query that will return results in a predictable order.
+# The utility takes the data source's URIs as the first and second positional arguments.
+# The query is passed as the third positional argument.
+# pg-diff will then use psql to execute the query against the respective data sources
+# and pipe the results to diff
+
+a="${1}"
+b="${2}"
+qa="${3}"
+qb="${4}"
+
+# If a second query wasn't provided, just use the first query against both data sources
+if [ -z "$qb" ]
+then
+	qb="${qa}"
+fi
+
+diff <(psql -Aqt "${a}" -c "${qa}") <(psql -Aqt "${b}" -c "${qb}")
