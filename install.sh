@@ -74,11 +74,11 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ $codename-pgdg main" \
 	| sudo tee /etc/apt/sources.list.d/pgdg.list
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get --yes update
-sudo apt-get --yes install postgresql-11
+sudo apt-get --yes install postgresql-12
 sudo apt-get --yes install pgadmin4
 
 # Version-lock the Postgres installation
-sudo apt-mark hold postgresql-11
+sudo apt-mark hold postgresql-12
 
 # Install Opera web browser
 # Often useful for streaming music on non-primary web browser (Firefox)
