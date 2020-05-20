@@ -20,11 +20,11 @@ sudo apt-get --yes install dconf-tools
 # Go
 # To remove an installation: $ sudo rm -rf /usr/local/go
 # You can (should) verify the download using sha256sum, for example: 
-# $ sha256sum go1.13.5.linux-amd64.tar.gz
-curl -0 --output ~/Downloads/go1.13.5.linux-amd64.tar.gz https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf ~/Downloads/go1.13.5.linux-amd64.tar.gz
+# $ sha256sum go1.14.3.linux-amd64.tar.gz
+curl -0 --output ~/Downloads/go1.14.3.linux-amd64.tar.gz https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf ~/Downloads/go1.14.3.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
-rm -rf ~/Downloads/go1.13.5.linux-amd64.tar.gz
+rm -rf ~/Downloads/go1.14.3.linux-amd64.tar.gz
 
 # Docker
 # Taken directly from docker docs: https://docs.docker.com/install/linux/docker-ce/ubuntu/
