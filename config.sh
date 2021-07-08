@@ -25,7 +25,6 @@ mkdir -p ~/bin
 # Clone my repo containing all configurations
 cd ~/src/github.com/daniel-salmon
 git clone https://github.com/daniel-salmon/home.git
-cd dotfiles
 
 # vimrc
 cp .vimrc ~/.vimrc
