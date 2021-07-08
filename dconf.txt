@@ -126,7 +126,7 @@ use-transparent-background=true
 use-theme-colors=false
 use-theme-transparency=false
 background-color='rgb(0,43,54)'
-background-transparency-percent=25
+background-transparency-percent=10
 
 [org/gnome/terminal/legacy]
 schema-version=uint32 3
