@@ -8,23 +8,8 @@
 # Photo by Andreas Gücklhorn on Unsplash
 wget -O ~/Pictures/background.jpg https://unsplash.com/photos/mawU2PoJWfU/download
 
-# Install Qogir theme
-cd ~/Downloads
-git clone https://github.com/vinceliuice/Qogir-theme.git
-cd Qogir-theme
-./install.sh --theme ubuntu --color dark --win square
-cd ..
-rm -rf Qogir-theme
-
-# Create src directory under which I like to keep repos
-mkdir -p ~/src/github.com/daniel-salmon
-
 # Create personal bin / scripts folder
 mkdir -p ~/bin
-
-# Clone my repo containing all configurations
-cd ~/src/github.com/daniel-salmon
-git clone https://github.com/daniel-salmon/home.git
 
 # vimrc
 cp .vimrc ~/.vimrc
@@ -38,9 +23,6 @@ cat dconf.txt | dconf load /
 # bashrc
 cat .bashrc | tee -a ~/.bashrc
 source ~/.bashrc
-
-# Remove Ubuntu dock
-sudo rm -rf /usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com
 
 # Git configurations
 git config --global user.email me@daniel-salmon.com
