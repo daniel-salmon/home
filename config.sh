@@ -8,6 +8,9 @@
 # Photo by Andreas Gücklhorn on Unsplash
 wget -O ~/Pictures/background.jpg https://unsplash.com/photos/mawU2PoJWfU/download
 
+# Create src directory
+mkdir -p ~/src/github.com/daniel-salmon
+
 # Create personal bin / scripts folder
 mkdir -p ~/bin
 
