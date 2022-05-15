@@ -8,11 +8,15 @@
 # Photo by Andreas Gücklhorn on Unsplash
 wget -O ~/Pictures/background.jpg https://unsplash.com/photos/mawU2PoJWfU/download
 
-# Create src directory
-mkdir -p ~/src/github.com/daniel-salmon
-
 # Create personal bin / scripts folder
 mkdir -p ~/bin
+
+# Create src directory and cd into it
+mkdir -p ~/src/github.com/daniel-salmon
+cd ~/src/github.com/daniel-salmon
+
+# Clone the home directory
+git clone https://github.com/daniel-salmon/home
 
 # vimrc
 cp .vimrc ~/.vimrc
@@ -22,6 +26,9 @@ cp bin/* ~/bin
 
 # Load my custom dconf profile
 cat dconf.txt | dconf load /
+
+# Disable the dock
+gnome-extensions disable ubuntu-dock@ubuntu.com
 
 # bashrc
 cat .bashrc | tee -a ~/.bashrc
