@@ -18,6 +18,9 @@ cd ~/src/github.com/daniel-salmon
 # Clone the home directory
 git clone https://github.com/daniel-salmon/home
 
+# Navigate to the cloned home directory
+cd home
+
 # vimrc
 cp .vimrc ~/.vimrc
 
