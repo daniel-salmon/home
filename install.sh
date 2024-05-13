@@ -13,6 +13,9 @@ sudo apt-get --yes install gcc
 # curl
 sudo apt-get --yes install curl
 
+# tmux
+sudo apt-get --yes install tmux
+
 # csvkit
 # Useful for performing data jiu jitsu
 sudo apt-get --yes install csvkit
