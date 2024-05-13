@@ -23,11 +23,10 @@ set number
 set showcmd
 set hlsearch
 
-" Status line and Full filepath at bottom
+" Status line and full filepath at bottom
 set laststatus=2
 set statusline+=%F
 
-" Python defaults
 au FileType python setlocal tabstop=4
 au FileType python setlocal softtabstop=4
 au FileType python setlocal shiftwidth=4
@@ -35,15 +34,6 @@ au FileType python setlocal textwidth=99
 au FileType python setlocal expandtab
 au FileType python setlocal autoindent
 au FileType python setlocal fileformat=unix
-
-" R defaults
-au BufNewFile,BufRead *.R setlocal tabstop=2
-au BufNewFile,BufRead *.R setlocal softtabstop=2
-au BufNewFile,BufRead *.R setlocal shiftwidth=2
-au BufNewFile,BufRead *.R setlocal textwidth=79
-au BufNewFile,BufRead *.R setlocal expandtab
-au BufNewFile,BufRead *.R setlocal autoindent
-au BufNewFile,BufRead *.R setlocal fileformat=unix
 
 au Filetype c setlocal tabstop=4
 au Filetype c setlocal softtabstop=4

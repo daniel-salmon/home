@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# Allow user to specify location for which to fetch the weather
-loc=${1:-""}
-
-# The ?m query param is used to specify units in the metric system...
-# Who needs Fahrenheit?
-curl "http://wttr.in/${loc}?m"
