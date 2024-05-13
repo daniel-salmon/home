@@ -2,7 +2,7 @@
 
 This repository contains scripts and dotfiles I like to use for configuration
 purposes. `install.sh` and `config.sh` dictate how to prepare a fresh install
-of Ubuntu for my personal use.
+personal use.
 
 # usage
 
