@@ -20,7 +20,8 @@ cd home
 cp .vimrc ~/.vimrc
 
 # bashrc
-cp .bashrc ~/.bashrc
+# This will append the commands in the local .bashrc to the end of the .bashrc in the home directory
+cat .bashrc | tee -a ~/.bashrc
 source ~/.bashrc
 
 # Git configurations
