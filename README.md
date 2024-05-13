@@ -6,7 +6,7 @@ personal use.
 
 # usage
 
-On a fresh install, you won't have access to git so first `wget` `install.sh`:
+On a fresh install, you won't have `git` so first `wget` `install.sh`:
 
 ```sh
 $ cd ~/Downloads
