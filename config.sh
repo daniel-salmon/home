@@ -26,7 +26,7 @@ source ~/.bashrc
 
 # Git configurations
 git config --global user.email salmond44@gmail.com
-git config --global user.name daniel-salmon
+git config --global user.name daniel salmon
 git config --global core.editor "vim"
 
 # Postgres password file
