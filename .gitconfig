@@ -1,0 +1,7 @@
+[user]
+	name = daniel salmon
+	email = salmond44@gmail.com
+[core]
+	editor = vim
+[includeIf "gitdir:~/src/github.com/otherorg/"]
+	path = .gitconfig-otherorg
